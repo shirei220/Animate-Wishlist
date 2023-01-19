@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cart</title>
+        <link rel="stylesheet" href="cart.css"/>
+    </head>
+    <body>
+        <h1>Animate Wishlist</h1>
+
+        <div class="cart-empty-msg" hidden>
+            <p>No items in your wishlist yet!</p>
+        </div>
+
+        <div id="cart-table">
+            <div class="thead">
+                <div class="trow">
+                    <div class="item">
+                        <p>Items</p>
+                    </div>
+                    <div class="qty">
+                        <p>Quantity</p>
+                    </div>
+                    <div class="price">
+                        <p>Price</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tbody">
+                <!-- to be filled by template-->
+            </div>
+            <!--placeholder divs for alignment purposes-->
+            <div class="tbody">
+                <div class="trow">
+                    <div class="item">
+                        <div class="options"></div>
+                        <div class="img"></div>
+                        <div class="main">
+                            <div class="title"></div>
+                            <div class="details">
+                                <div class="release"></div>
+                                <div class="stock"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qty"></div>
+                    <div class="price total"><p>０円</p></div>
+                </div>
+            </div>
+        </div>
+
+        <template id="itemrow">
+            <div class="trow" data-id="">
+                <div class="item">
+                    <div class="options"><img class="btn-remove" src="/icons/remove.png" alt="remove item button"></div>
+                    <div class="img"><img src="" alt="item image"></div>
+                    <div class="main">
+                        <div class="title"><a href="" target="_blank" rel="noopener noreferrer"></a></div>
+                        <div class="details">
+                            <div class="release"><p></p></div>
+                            <div class="stock"><p></p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="qty">
+                    <img class="btn-qty btn-qty-subtract" src="/icons/subtract.png" alt="subtract quantity">
+                    <p></p>
+                    <img class="btn-qty btn-qty-add" src="/icons/add.png" alt="add quantity">
+                </div>
+                <div class="price" data-price=""><p></p></div>
+            </div>
+        </template>
+
+        <script src="cart.js" type="module"></script>
+    </body>
+</html>

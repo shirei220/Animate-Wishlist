@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Animate Wishlist",
+    "description": "Allows you to save items from the Animate JP website in an enhanced cart-like wishlist. Keeps track of total price and bonus goods thresholds.",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "permissions": ["storage", "activeTab", "scripting"],
+    "host_permissions": ["http://www.animate-onlineshop.jp/p*"]
+}

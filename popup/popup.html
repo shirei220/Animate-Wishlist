@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="popup.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>Animate Wishlist</h1>
+            <img id="btn-list" class="cart-icon" src="/icons/cart.png" alt="cart icon and link">
+        </header>
+
+        <div class="no-item-msg">
+            <p>No item detected.</p>
+        </div>
+
+        <div class="item-added-msg" hidden>
+            <p>Item added to wishlist!</p>
+        </div>
+
+        <div class="item-already-added-msg" hidden>
+            <p>This item is already in your wishlist.</p>
+        </div>
+
+        <div class="item-updated-msg" hidden>
+            <p>Item updated.</p>
+        </div>
+
+        <main style="display:none;">
+            <p class="item-name">name of item</p>
+            <div class="item-bottom">
+                <div class="details">
+                    <div class="qty">
+                        <img class="btn-qty btn-qty-subtract" src="/icons/subtract-disabled.png" alt="subtract quantity" disabled>
+                        <p>1</p>
+                        <img class="btn-qty btn-qty-add" src="/icons/add.png" alt="add quantity">
+                    </div>
+                    <p class="price">100円</p>
+                </div>
+                <button class="btn-add" disabled>Add</button>
+            </div>
+        </main>
+
+        <!-- <button id="btn-clear">clear</button>  -->
+
+        <script src="popup.js" type="module"></script>
+    </body>
+</html>
